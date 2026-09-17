@@ -8,7 +8,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
   const resultArea = document.getElementById("form-result");
   resultArea.textContent = "送信中...";
 
-  fetch("https://b3l5zrom6c.execute-api.us-east-1.amazonaws.com", {
+  fetch("https://b3l5zrom6c.execute-api.us-east-1.amazonaws.com/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
